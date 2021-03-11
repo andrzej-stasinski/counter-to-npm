@@ -1,6 +1,6 @@
 {
-  "name": "9_npm",
-  "version": "0.0.0",
+  "name": "andis_as_pack",
+  "version": "1.0.0",
   "description": "Ala ma kota",
   "main": "index.js",
   "scripts": {
