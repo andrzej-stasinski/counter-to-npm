@@ -17,7 +17,7 @@ export const Counter = class {
     render() {
         this.container.innerText = ''
         const h1 = new Header(this.number)
-        const button = new Button('[ + ]',() => this.inc())
+        const button = new Button('[ ++ ]',() => this.inc())
         this.container.appendChild(h1.render())
         this.container.appendChild(button.render())
     }

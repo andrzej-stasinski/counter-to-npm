@@ -16,7 +16,7 @@ export class Decreasing extends Counter {
     render() {
         super.render()
 
-        const button = new Button('-', () => this.dec())
+        const button = new Button('[ - ]', () => this.dec())
 
         this.container.appendChild(button.render())
     }

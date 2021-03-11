@@ -2,7 +2,10 @@
 console.log('TEST')
 
 
-import {Counter, Decreasing} from '../src'
+import * as dist from '../src'
+console.log(dist)
+
+import {Counter, Decreasing} from '../dist'
 
 const counter1 = new Counter('.counter-1')
 counter1.init()
