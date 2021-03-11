@@ -1,5 +1,21 @@
 
+console.log('TEST')
 
+
+    import Decreasing from './Decreasing.js'
+    import {Counter} from './Counter.js'
+
+    const counter1 = new Counter('.counter-1')
+    counter1.init()
+
+    const counter2 = new Decreasing('.counter-2')
+    counter2.init()
+
+    // console.dir(counter1)
+    // console.dir(counter2)
+
+    // console.log(counter1)
+    // console.log(counter2)
 
 
 
