@@ -2,9 +2,6 @@
 console.log('TEST')
 
 
-import * as dist from '../src'
-console.log(dist)
-
 import {Counter, Decreasing} from '../dist'
 
 const counter1 = new Counter('.counter-1')
@@ -13,11 +10,19 @@ counter1.init()
 const counter2 = new Decreasing('.counter-2')
 counter2.init()
 
+const counter3 = new Counter('.counter-3', 10)
+counter3.init()
+
+const counter4 = new Decreasing('.counter-4', 20)
+counter4.init()
+
 console.dir(counter1)
 console.dir(counter2)
 
 console.log(counter1)
 console.log(counter2)
+
+
 
 
 

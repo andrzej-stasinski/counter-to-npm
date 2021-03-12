@@ -4,12 +4,12 @@ import {Button} from './Button.js'
 import {Header} from './Header.js'
 
 export const Counter = class {
-    constructor(selector) {
+    constructor(selector, start = 0) {
         const container = document.querySelector(selector)
         if(!container) throw new Error('Container not found')
         this.selector = selector
         this.container = container
-        this.number = 0
+        this.number = start
     }
     init() {
         this.render()

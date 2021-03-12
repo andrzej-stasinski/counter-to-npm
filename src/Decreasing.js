@@ -4,8 +4,8 @@ import {Button} from './Button.js'
 
 export class Decreasing extends Counter {
 
-    constructor(selector) {
-        super(selector)
+    constructor(...args) {
+        super(...args)
     }
 
     dec() {

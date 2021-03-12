@@ -1,4 +1,4 @@
-# andis_as_pack
+# andis_as_pack - test own package
 
 Package with two counters 'Counter' & 'Decreasing'
 
@@ -14,7 +14,10 @@ npm start
 
 ## API
 
-Every counter gets arguments - selector of element to be rendered in
+Every counter gets two arguments 
+1. selector of element to be rendered in
+2. start number [optional, default 0]
+
 Counter should be initialized after creation by calling `.init()` method
 
 ```javascript
@@ -23,10 +26,10 @@ console.log(dist)
 
 import {Counter, Decreasing} from '../dist'
 
-const counter1 = new Counter('.counter-1')
+const counter1 = new Counter('.counter-1', 10)
 counter1.init()
 
-const counter2 = new Decreasing('.counter-2')
+const counter2 = new Decreasing('.counter-2', 20)
 counter2.init()
 ```
 
